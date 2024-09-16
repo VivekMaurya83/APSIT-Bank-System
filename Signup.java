@@ -17,7 +17,7 @@ public class Signup extends JFrame implements ActionListener {
     Signup(){
         super ("APPLICATION FORM");
 
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/bank.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/Apsit.png"));
         Image i2 = i1.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
@@ -76,12 +76,12 @@ public class Signup extends JFrame implements ActionListener {
 
         r1 = new JRadioButton("Male");
         r1.setFont(new Font("Raleway", Font.BOLD,14));
-        r1.setBackground(new Color(222,255,228));
+        r1.setBackground(new Color(255,255,255));
         r1.setBounds(300,290,60,30);
         add(r1);
 
         r2 = new JRadioButton("Female");
-        r2.setBackground(new Color(222,255,228));
+        r2.setBackground(new Color(255,255,255));
         r2.setFont(new Font("Raleway", Font.BOLD,14));
         r2.setBounds(450,290,90,30);
         add(r2);
@@ -108,18 +108,18 @@ public class Signup extends JFrame implements ActionListener {
 
         m1 = new JRadioButton("Married");
         m1.setBounds(300,440,100,30);
-        m1.setBackground(new Color(222,255,228));
+        m1.setBackground(new Color(255,255,255));
         m1.setFont(new Font("Raleway", Font.BOLD,14));
         add(m1);
 
         m2 = new JRadioButton("Unmarried");
-        m2.setBackground(new Color(222,255,228));
+        m2.setBackground(new Color(255,255,255));
         m2.setBounds(450,440,100,30);
         m2.setFont(new Font("Raleway", Font.BOLD,14));
         add(m2);
 
         m3 = new JRadioButton("Other");
-        m3.setBackground(new Color(222,255,228));
+        m3.setBackground(new Color(255,255,255));
         m3.setBounds(635,440,100,30);
         m3.setFont(new Font("Raleway", Font.BOLD,14));
         add(m3);
@@ -177,7 +177,7 @@ public class Signup extends JFrame implements ActionListener {
         next.addActionListener(this);
         add(next);
 
-        getContentPane().setBackground(new Color(222,255,228));
+        getContentPane().setBackground(new Color(255,255,255));
         setLayout(null);
         setSize(850,800);
         setLocation(360,40);
@@ -188,30 +188,30 @@ public class Signup extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        String formno = first;
-        String name = textName.getText();
-        String fname = textFname.getText();
-        String dob = textdob.getText();
-        String gender = null;
-        if(r1.isSelected()){
-            gender = "Male";
-        }else if (r2.isSelected()){
-            gender = "Female";
-        }
-        String email = textEmail.getText();
-        String marital =null;
-        if (m1.isSelected()){
-            marital = "Married";
-        } else if (m2.isSelected()) {
-            marital = "Unmarried";
-        } else if (m3.isSelected()) {
-            marital = "Other";
-        }
+        // String formno = first;
+        // String name = textName.getText();
+        // String fname = textFname.getText();
+        // String dob = textdob.getText();
+        // String gender = null;
+        // if(r1.isSelected()){
+        //     gender = "Male";
+        // }else if (r2.isSelected()){
+        //     gender = "Female";
+        // }
+        // String email = textEmail.getText();
+        // String marital =null;
+        // if (m1.isSelected()){
+        //     marital = "Married";
+        // } else if (m2.isSelected()) {
+        //     marital = "Unmarried";
+        // } else if (m3.isSelected()) {
+        //     marital = "Other";
+        // }
 
-        String address = textAdd.getText();
-        String city = textcity.getText();
-        String pincode = textPin.getText();
-        String state = textState.getText();
+        // String address = textAdd.getText();
+        // String city = textcity.getText();
+        // String pincode = textPin.getText();
+        // String state = textState.getText();
 
         try{
             if (textName.getText().equals("")){

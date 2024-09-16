@@ -12,11 +12,11 @@ public class Login extends JFrame implements ActionListener{
     JButton button1,button2,button3;
     Login(){
         super("Bank Management System");
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/bank.jpg"));
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/Apsit.png"));
         Image i2 = i1.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel image = new JLabel(i3);
-        image.setBounds(350,10,100,100);
+        image.setBounds(350,5,130,130);
         add(image);
 
         ImageIcon ii1 = new ImageIcon(ClassLoader.getSystemResource("icon/card.png"));
@@ -78,14 +78,14 @@ public class Login extends JFrame implements ActionListener{
         button3.addActionListener(this);
         add(button3);
 
-        ImageIcon iii1 = new ImageIcon(ClassLoader.getSystemResource("icon/backbg.png"));
-        Image iii2 = iii1.getImage().getScaledInstance(850,480,Image.SCALE_DEFAULT);
-        ImageIcon iii3 = new ImageIcon(iii2);
-        JLabel iiimage = new JLabel(iii3);
-        iiimage.setBounds(0,0,850,480);
-        add(iiimage);
+        // ImageIcon iii1 = new ImageIcon(ClassLoader.getSystemResource("icon/backbg.png"));
+        // Image iii2 = iii1.getImage().getScaledInstance(850,480,Image.SCALE_DEFAULT);
+        // ImageIcon iii3 = new ImageIcon(iii2);
+        // JLabel iiimage = new JLabel(iii3);
+        // iiimage.setBounds(0,0,850,480);
+        // add(iiimage);
 
-
+        getContentPane().setBackground(new Color(238,66,66));
         setLayout(null);
         setSize(850,480);
         setLocation(450,200);
