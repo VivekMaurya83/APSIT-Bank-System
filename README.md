@@ -7,19 +7,19 @@ Mihir Mehta
 
 SITE MAP of this APSIT BANK SYSTEM
 
-                                                     |--------DEPOSIT
-                                                     |
-             |------------------------MAIN PAGE------|--------WITHDRAWAL
-             |                           |           |
-LOGIN PAGE---|                           |           |--------CHECK BALANCE
-             |                           |           
-             |------- SIGNUP             |
-                        |                |
-                        |                |
-                        Signup1          |
-                        |                |
-                        |                |
-                        Signup2          |
-                        |                |
-                        |                |
-                        Signup3----------|
+                                                     |--------DEPOSIT  <------------------|                    
+                                                     |                                    |
+             |------------------------MAIN PAGE------|--------WITHDRAWAL                  |
+             |                                       |                                    |
+LOGIN PAGE---|                                       |--------CHECK BALANCE               |
+             |                                                                            |
+             |------- SIGNUP                                                              |                      
+                        |                                                                 |
+                        |                                                                 |
+                        Signup1                                                           |
+                        |                                                                 |
+                        |                                                                 |
+                        Signup2                                                           |    
+                        |                                                                 |
+                        |                                                                 |
+                        Signup3-----------------------------------------------------------|
