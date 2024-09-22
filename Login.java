@@ -11,7 +11,7 @@ public class Login extends JFrame implements ActionListener{
 
     JButton button1,button2,button3;
     Login(){
-        super("Bank Management System");
+        super("APSIT Bank System");
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/Apsit.png"));
         Image i2 = i1.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -78,13 +78,6 @@ public class Login extends JFrame implements ActionListener{
         button3.addActionListener(this);
         add(button3);
 
-        // ImageIcon iii1 = new ImageIcon(ClassLoader.getSystemResource("icon/backbg.png"));
-        // Image iii2 = iii1.getImage().getScaledInstance(850,480,Image.SCALE_DEFAULT);
-        // ImageIcon iii3 = new ImageIcon(iii2);
-        // JLabel iiimage = new JLabel(iii3);
-        // iiimage.setBounds(0,0,850,480);
-        // add(iiimage);
-
         getContentPane().setBackground(new Color(238,66,66));
         setLayout(null);
         setSize(850,480);
@@ -95,16 +88,21 @@ public class Login extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        String cardno = textField2.getText();
+        String pin = passwordField3.getText();
         try{
             if (e.getSource()==button1){
+                if(cardno.equals("")||pin.equals("")){
+                    JOptionPane.showMessageDialog(null, "Fill the required field");
+                }
                 // Connn c = new Connn();
-                // String cardno = textField2.getText();
-                // String pin = passwordField3.getText();
                 // String q = "select * from login where card_number = '"+cardno+"' and  pin = '"+pin+"'";
                 // ResultSet resultSet = c.statement.executeQuery(q);
                 // if (resultSet.next()){
-                //     setVisible(false);
-                //     new main_Class(pin);
+                else{
+                    setVisible(false);
+                    new main_Class(pin);
+                }
                 // }else {
                 //     JOptionPane.showMessageDialog(null,"Incorrect Card Number or PIN");
                 // }

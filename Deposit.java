@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Date;
+// import java.util.Date;
 
 public class Deposit extends JFrame implements ActionListener {
    String pin;
@@ -57,7 +57,7 @@ public class Deposit extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try {
             String amount = textField.getText();
-            Date date = new Date();
+            // Date date = new Date();
             if (e.getSource()==b1){
                 if (textField.getText().equals("")){
                     JOptionPane.showMessageDialog(null,"Please enter the Amount you want to Deposit");
@@ -66,11 +66,11 @@ public class Deposit extends JFrame implements ActionListener {
                     // c.statement.executeUpdate("insert into bank values('"+pin+"', '"+date+"','Deposit', '"+amount+"')");
                     JOptionPane.showMessageDialog(null,"Rs. "+amount+" Deposited Successfully");
                     setVisible(false);
-                    // new main_Class(pin);
+                    new main_Class(pin);
                 }
             }else if (e.getSource()==b2){
                 setVisible(false);
-                // new main_Class(pin);
+                new main_Class(pin);
             }
         }catch (Exception E){
             E.printStackTrace();

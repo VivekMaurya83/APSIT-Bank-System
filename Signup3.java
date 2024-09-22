@@ -184,7 +184,7 @@ public class Signup3 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String atype = "null";
+        String atype = "";
         if (r1.isSelected()){
             atype = "Saving Account";
         } else if (r2.isSelected()) {
@@ -219,7 +219,7 @@ public class Signup3 extends JFrame implements ActionListener {
 
         try {
             if (e.getSource()==s){
-                if (atype.equals("null")){
+                if (atype.equals("")||fac.equals("")){
                     JOptionPane.showMessageDialog(null,"Fill all the fields");
                 }else {
                     // Connn c1 = new Connn();

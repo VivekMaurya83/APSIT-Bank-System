@@ -1,5 +1,4 @@
 import javax.swing.*;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -185,30 +184,30 @@ public class Signup2 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // String rel = (String) comboBox.getSelectedItem();
-        // String cate = (String) comboBox2.getSelectedItem();
-        // String inc = (String) comboBox3.getSelectedItem();
-        // String edu = (String) comboBox4.getSelectedItem();
-        // String occ = (String) comboBox5.getSelectedItem();
+        String rel = (String) comboBox.getSelectedItem();
+        String cate = (String) comboBox2.getSelectedItem();
+        String inc = (String) comboBox3.getSelectedItem();
+        String edu = (String) comboBox4.getSelectedItem();
+        String occ = (String) comboBox5.getSelectedItem();
 
-        // String pan = textPan.getText();
-        // String addhar = textAadhar.getText();
+        String pan = textPan.getText();
+        String aadhar = textAadhar.getText();
 
-        // String scitizen = " ";
-        // if ((r1.isSelected())){
-        //     scitizen = "Yes";
-        // } else if (r2.isSelected()) {
-        //     scitizen ="No";
-        // }
-        // String eAccount = " ";
-        // if ((r1.isSelected())){
-        //     eAccount = "Yes";
-        // } else if (r2.isSelected()) {
-        //     eAccount ="No";
-        // }
+        String scitizen = " ";
+        if ((r1.isSelected())){
+            scitizen = "Yes";
+        } else if (r2.isSelected()) {
+            scitizen ="No";
+        }
+        String eAccount = " ";
+        if ((r1.isSelected())){
+            eAccount = "Yes";
+        } else if (r2.isSelected()) {
+            eAccount ="No";
+        }
 
         try{
-            if (textPan.getText().equals("") || textAadhar.getText().equals("")){
+            if (rel.equals("") || cate.equals("")||inc.equals("")||edu.equals("")||occ.equals("")||pan.equals("")||aadhar.equals("")||scitizen.equals("")||eAccount.equals("")){
                 JOptionPane.showMessageDialog(null,"Fill all the fields");
             }
             else if(e.getSource()==next){

@@ -11,7 +11,9 @@ SITE MAP of this APSIT BANK SYSTEM
                                                      |                                    |
              |------------------------MAIN PAGE------|--------WITHDRAWAL                  |
              |                                       |                                    |
-LOGIN PAGE---|                                       |--------CHECK BALANCE               |
+             |                                       |--------MINI STATEMENT              |
+LOGIN PAGE---|                                       |                                    |
+             |                                       |-------CHECK BALANCE                |
              |                                                                            |
              |------- SIGNUP                                                              |                      
                         |                                                                 |
