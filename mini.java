@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.ResultSet;
+// import java.sql.ResultSet;
 
 public class mini extends JFrame implements ActionListener {
     String pin;
@@ -31,34 +31,34 @@ public class mini extends JFrame implements ActionListener {
         label4.setBounds(20,400,300,20);
         add(label4);
 
-        try{
-            Connn c = new Connn();
-            ResultSet resultSet = c.statement.executeQuery("select * from login where pin = '"+pin+"'");
-            while (resultSet.next()){
-                label3.setText("Card Number:  "+ resultSet.getString("card_number").substring(0,4) + "XXXXXXXX"+ resultSet.getString("card_number").substring(12));
-            }
-        }catch (Exception e ){
-            e.printStackTrace();
-        }
+        // try{
+        //     Connn c = new Connn();
+        //     ResultSet resultSet = c.statement.executeQuery("select * from login where pin = '"+pin+"'");
+        //     while (resultSet.next()){
+        //         label3.setText("Card Number:  "+ resultSet.getString("card_number").substring(0,4) + "XXXXXXXX"+ resultSet.getString("card_number").substring(12));
+        //     }
+        // }catch (Exception e ){
+        //     e.printStackTrace();
+        // }
 
-        try{
-            int balance =0;
-            Connn c = new Connn();
-            ResultSet resultSet = c.statement.executeQuery("select * from bank where pin = '"+pin+"'");
-            while (resultSet.next()){
+        // try{
+        //     int balance =0;
+        //     Connn c = new Connn();
+        //     ResultSet resultSet = c.statement.executeQuery("select * from bank where pin = '"+pin+"'");
+        //     while (resultSet.next()){
 
-                label1.setText(label1.getText() + "<html>"+resultSet.getString("date")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+resultSet.getString("type")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+resultSet.getString("amount")+ "<br><br><html>");
+        //         label1.setText(label1.getText() + "<html>"+resultSet.getString("date")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+resultSet.getString("type")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+resultSet.getString("amount")+ "<br><br><html>");
 
-                if (resultSet.getString("type").equals("Deposit")){
-                    balance += Integer.parseInt(resultSet.getString("amount"));
-                }else {
-                    balance -= Integer.parseInt(resultSet.getString("amount"));
-                }
-            }
-            label4.setText("Your Total Balance is Rs "+balance);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+        //         if (resultSet.getString("type").equals("Deposit")){
+        //             balance += Integer.parseInt(resultSet.getString("amount"));
+        //         }else {
+        //             balance -= Integer.parseInt(resultSet.getString("amount"));
+        //         }
+        //     }
+        //     label4.setText("Your Total Balance is Rs "+balance);
+        // }catch (Exception e){
+        //     e.printStackTrace();
+        // }
 
         button = new JButton("Exit");
         button.setBounds(20,500,100,25);

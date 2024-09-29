@@ -73,22 +73,6 @@ public class Withdrawl extends JFrame implements ActionListener {
                 else if(amount1>10000){
                     JOptionPane.showMessageDialog(null,"The amount entered is above the daily limit");
                 }
-                // else {
-                //     Connn c = new Connn();
-                //     ResultSet resultSet = c.statement.executeQuery("select * from bank where pin = '" + pin + "'");
-                //     int balance = 0;
-                //     while (resultSet.next()) {
-                //         if (resultSet.getString("type").equals("Deposit")) {
-                //             balance += Integer.parseInt(resultSet.getString("amount"));
-                //         } else {
-                //             balance -= Integer.parseInt(resultSet.getString("amount"));
-                //         }
-                //     }
-                //     if (balance < Integer.parseInt(amount)) {
-                //         JOptionPane.showMessageDialog(null, "Insuffient Balance");
-                //         return;
-                //     }
-                    // c.statement.executeUpdate("insert into bank values('" + pin + "', '" + date + "', 'Withdrawl', '" + amount + "' )");
                     else{
                     JOptionPane.showMessageDialog(null, "Rs. " + amount + " Debited Successfully");
                     setVisible(false);

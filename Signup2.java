@@ -211,10 +211,6 @@ public class Signup2 extends JFrame implements ActionListener {
                 JOptionPane.showMessageDialog(null,"Fill all the fields");
             }
             else if(e.getSource()==next){
-            // else {
-                // Connn c = new Connn();
-                // String q = "insert into Signuptwo values('"+formno+"', '"+rel+"', '"+cate+"','"+inc+"','"+edu+"','"+occ+"','"+pan+"','"+addhar+"','"+scitizen+"','"+eAccount+"')";
-                // c.statement.executeUpdate(q);
                 new Signup3(formno);
                 setVisible(false);
             }
