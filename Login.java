@@ -2,16 +2,29 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-// import java.sql.ResultSet;
+import java.util.HashMap;
 
 public class Login extends JFrame implements ActionListener{
     JLabel label1, label2, label3;
     JTextField textField2;
     JPasswordField passwordField3;
-
     JButton button1,button2,button3;
+
+    HashMap<String, String> users;
+
     Login(){
         super("APSIT Bank System");
+
+        users=new HashMap<>();
+
+        //Hardcoded values of cardno and pin for users//
+        users.put("8766971600", "1600");  //Vivek Maurya//
+        users.put("8369451800", "1800");  //Prem Mahajan//
+        users.put("7738834700", "4700");  //Vinayak Mishra//
+        users.put("8850957300", "7300");  //Mihir Mehta//
+        users.put("9653232900", "2900");  //Vedant Mallya//
+        
+
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/Apsit.png"));
         Image i2 = i1.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -92,22 +105,18 @@ public class Login extends JFrame implements ActionListener{
         String pin = passwordField3.getText();
         try{
             if (e.getSource()==button1){
-                if(cardno.equals("")||pin.equals("")){
-                    JOptionPane.showMessageDialog(null, "Fill the required field");
+                if (cardno.equals("") || pin.equals("")) {
+                    JOptionPane.showMessageDialog(null, "Fill the required fields");
                 }
-                // Connn c = new Connn();
-                // String q = "select * from login where card_number = '"+cardno+"' and  pin = '"+pin+"'";
-                // ResultSet resultSet = c.statement.executeQuery(q);
-                // if (resultSet.next()){
-                else{
+                else if ((users.containsKey(cardno))&&(users.get(cardno).equals(pin))) {
                     setVisible(false);
                     new main_Class(pin);
                 }
-                // }else {
-                //     JOptionPane.showMessageDialog(null,"Incorrect Card Number or PIN");
-                // }
-
-
+                    
+                    else{
+                    JOptionPane.showMessageDialog(null, "Invalid Cardno and Pin");
+                }
+            
             }else if (e.getSource() == button2){
                 textField2.setText("");
                 passwordField3.setText("");
