@@ -13,7 +13,7 @@ public class mini extends JFrame implements ActionListener {
         setLocation(20,20);
         setLayout(null);
 
-        JLabel label1 = new JLabel("TechCoder A.V");
+        JLabel label1 = new JLabel("MINI Statement");
         label1.setFont(new Font("System", Font.BOLD,15));
         label1.setBounds(150,20,200,20);
         add(label1);
