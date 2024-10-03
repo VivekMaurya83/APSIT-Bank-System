@@ -51,7 +51,7 @@ public class Login extends JFrame implements ActionListener{
         label2.setBounds(150,190,375,30);
         add(label2);
 
-        textField2 = new JTextField(15);
+        textField2 = new JTextField();
         textField2.setBounds(325,190,230,30);
         textField2.setFont(new Font("Arial", Font.BOLD,14));
         add(textField2);
@@ -62,7 +62,7 @@ public class Login extends JFrame implements ActionListener{
         label3.setBounds(150,250,375,30);
         add(label3);
 
-        passwordField3 = new JPasswordField(15);
+        passwordField3 = new JPasswordField();
         passwordField3.setBounds(325,250,230,30);
         passwordField3.setFont(new Font("Arial", Font.BOLD, 14));
         add(passwordField3);

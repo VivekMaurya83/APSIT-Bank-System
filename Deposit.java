@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-// import java.util.Date;
 
 public class Deposit extends JFrame implements ActionListener {
    String pin;
@@ -57,7 +56,6 @@ public class Deposit extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try {
             String amount = textField.getText();
-            // Date date = new Date();
             if (e.getSource()==b1){
                 if (textField.getText().equals("")){
                     JOptionPane.showMessageDialog(null,"Please enter the Amount you want to Deposit");
