@@ -62,11 +62,9 @@ BankManagementSystem/
 
 ## 📸 Screenshots
 
-> <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/04b7aecb-f26c-4f25-a4f6-7f2a0ca322ec" /> SignUp
-, <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b1a0abd7-2f64-4571-937f-86b060b54c50" /> Login
-, <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/49a492e0-52c2-4f63-b1ef-9149f44b3dad" /> Main Page after login
-, <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/1acb8219-cbaa-4ef4-8c94-de84db9d8d6d" /> Deposit
-, <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/aa1f6627-78f7-460b-b24d-e1cd46e51a14" /> Withdrawal 
+> <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/04b7aecb-f26c-4f25-a4f6-7f2a0ca322ec" /> SignUp <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b1a0abd7-2f64-4571-937f-86b060b54c50" /> Login
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/49a492e0-52c2-4f63-b1ef-9149f44b3dad" /> Main Page after login <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/1acb8219-cbaa-4ef4-8c94-de84db9d8d6d" /> Deposit
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/aa1f6627-78f7-460b-b24d-e1cd46e51a14" /> Withdrawal 
 ` 
 
 ---
